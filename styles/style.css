@@ -1,0 +1,119 @@
+:root {
+  --bright-orange: #e28526;
+  --dark-cyan: #006970;
+  --very-dark-cyan: #004241;
+  --button-text: #ba986c;
+  --transparent-white: rgba(255, 255, 255, 0.75);
+  --white: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Lexend Deca', sans-serif;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.card {
+  padding: 4.8rem;
+  color: var(--white);
+  width: 30.7rem;
+}
+.card h2 {
+  font-family: 'Big Shoulders', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 36px;
+  text-transform: uppercase;
+}
+.card p {
+  font-size: 1.5rem;
+  line-height: 25px;
+  margin-top: 36px;
+  color: var(--transparent-white);
+}
+[data-type='sedan'] {
+  background-color: var(--bright-orange);
+}
+
+[data-type='suv'] {
+  background-color: var(--dark-cyan);
+}
+
+[data-type='luxury'] {
+  background-color: var(--very-dark-cyan);
+}
+/* -Button- */
+.button {
+  width: 14.7rem;
+  height: auto;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  margin-top: 80px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.button:hover {
+  border-color: currentColor;
+  color: var(--transparent-white);
+  background-color: transparent;
+  outline: none;
+}
+[data-type='sedan'] .button:not(:hover) {
+  color: var(--bright-orange);
+}
+[data-type='suv'] .button:not(:hover) {
+  color: var(--dark-cyan);
+}
+[data-type='luxury'] .button:not(:hover) {
+  color: var(--very-dark-cyan);
+}
+.attribution {
+  font-size: 13px;
+  display: none;
+}
+.attribution a {
+  color: rgb(60, 136, 234);
+  font-weight: bold;
+}
+.attribution span {
+  color: rgb(102, 226, 45);
+}
+/* QUERIES */
+@media (min-width: 925px) {
+  .cards-container {
+    flex-direction: row;
+    margin: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  .attribution {
+    margin-top: 30px;
+    display: block;
+  }
+  .main {
+    min-height: 100vh;
+  }
+}
