@@ -10,8 +10,8 @@ Este é um desafio do [Frontend Mentor](https://www.frontendmentor.io). O objeti
 
 ## 🔗 Links
 
-- **[Site online](https://meuprojeto.vercel.app)**
-- **[Repositório](https://github.com/seu-usuario/nome-do-repo)**
+- **[Site online](https://alisonlim4.github.io/3-column-preview-card-component/)**
+- **[Repositório](https://github.com/AlisonLim4/3-column-preview-card-component/tree/main)**
 
 ## 🛠️ Como Rodar Localmente
 
